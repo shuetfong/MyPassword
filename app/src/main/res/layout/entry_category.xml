@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="15dp"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/rounded_categoryentry"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_bookmark"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:id="@+id/categoryName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Category Name"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="10dp"/>
+
+    <ImageButton
+        android:id="@+id/categoryEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_edit"/>
+
+    <ImageButton
+        android:id="@+id/categoryDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground"
+        android:src="@drawable/ic_delete"
+        android:layout_marginHorizontal="10dp"/>
+
+</LinearLayout>

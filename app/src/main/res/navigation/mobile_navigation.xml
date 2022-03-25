@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/passwordFragment">
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="my.edu.utar.mypassword.CategoryFragment"
+        tools:layout="@layout/fragment_category" />
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="my.edu.utar.mypassword.PasswordFragment"
+        tools:layout="@layout/fragment_password" />
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="my.edu.utar.mypassword.ToolsFragment"
+        tools:layout="@layout/fragment_tools" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="my.edu.utar.mypassword.SettingsFragment"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

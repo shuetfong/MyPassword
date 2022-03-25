@@ -1,0 +1,27 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Bottom 2dp Shadow -->
+    <item>
+        <shape  android:shape="rectangle">
+
+            <solid android:color="@color/cEntry_shadow" />
+            <corners android:radius="50dp" />
+
+        </shape>
+    </item>
+
+    <!-- White Top color -->
+    <item android:bottom="3dp">
+
+        <shape  android:shape="rectangle">
+
+            <solid android:color="@color/cEntry_background" />
+            <corners android:radius="50dp" />
+
+
+        </shape>
+
+    </item>
+
+
+</layer-list>

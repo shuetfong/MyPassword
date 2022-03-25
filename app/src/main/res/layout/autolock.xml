@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/auto_lock_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Automatically lock when inactive for:"
+        android:textSize="15sp"
+        android:layout_marginVertical="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/auto_lock_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/auto_lock_never">
+
+        <RadioButton
+            android:id="@+id/auto_lock_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_lock_2"
+            android:tag="2"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/auto_lock_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_lock_5"
+            android:tag="5"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/auto_lock_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_lock_10"
+            android:tag="10"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/auto_lock_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_lock_15"
+            android:tag="15"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/auto_lock_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_lock_30"
+            android:tag="30"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/auto_lock_60"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_lock_60"
+            android:tag="60"
+            android:layoutDirection="rtl"/>
+
+        <RadioButton
+            android:id="@+id/auto_lock_never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_lock_never"
+            android:tag="never"
+            android:layoutDirection="rtl"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_auto_lock_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_button_purple"
+        android:text="@string/confirm_btn"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/close_auto_lock_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_button_light"
+        android:text="@string/password_close_btn"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_500" />
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_category_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:hintEnabled="true"
+        android:hint="@string/category_name_label"
+        app:boxStrokeWidth="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ori_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="none"
+            android:paddingHorizontal="10dp"
+            android:focusable="false"
+            android:text="@string/category_name_label"
+            android:textColor="@color/disabled_text"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edit_category_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        app:hintEnabled="true"
+        android:hint="@string/new_category_name_label"
+        app:endIconMode="clear_text"
+        app:errorEnabled="true"
+        app:errorIconDrawable="@null"
+        app:counterEnabled="true"
+        app:counterMaxLength="30">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_category_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="text"
+            android:paddingHorizontal="10dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirm_edit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_button_purple"
+        android:text="@string/confirm_btn"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/close_edit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/rounded_button_light"
+        android:text="@string/password_close_btn"
+        android:textAllCaps="true"
+        android:textColor="@color/purple_500" />
+
+</LinearLayout>
